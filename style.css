@@ -1,0 +1,220 @@
+/* STYLE SECTIONING TAGS */
+* {   /* Reset the margin and padding for all the elements */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center; 
+  color: #003046; /* Default text color */
+  background-color: #fdfffc; /* Background color */
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  font-size: 55px;
+  padding: 20px;
+  font-weight: lighter;
+  font-family: "Agency FB", monospace;
+  
+}
+
+main {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20%;
+  margin-left: 20%;
+  text-align: center; 
+}
+
+/* STYLE TEXT */
+p {
+  font-size: 1.2em;
+  text-align: left; 
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h1 {
+  font-size: 2.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#intro-text {
+  font-size: 3em;
+  text-align: center; 
+  color:black;
+  font-family: "Impact", fantasy;
+}
+
+/* STYLE IMAGES */
+#main-img  {    /* Style image at the top website */
+  border-radius: 50%;
+  max-height: 250px;
+  margin-bottom: -5em;
+  border: 4px solid teal;
+}
+
+.port-img {     /* Style the portfolio images */
+  border-radius: 10%;
+  max-height: 20em; 
+}
+
+/* STYLE NAV BAR */
+
+#red 
+ { list-style-type: none;
+  background-color: #000000;
+  overflow: hidden;
+  padding: 0.5em;
+  margin: 0px;
+ }
+
+li{
+display: inline;
+}
+
+li a{
+  text-decorations: none;
+  color: white;
+  font-size: 1.3em;
+  padding: 7% ;
+}
+
+  li a:hover{
+    background-color: grey;
+  }
+footer{
+  background-color: grey;
+  color: white;
+  font-size: 1em;
+  padding:1em;
+}
+
+.contactImg{
+  max-height: 150px;
+  margin: 2em;
+  overflow:hidden;
+  margin-bottom: 5em;
+}
+
+#contacttext{
+  font-size: 2em
+}
+
+.link{
+  overflow: hidden;
+}
+
+#book{
+  font-size: 2em;
+  color: teal;
+}
+
+.more{
+  display: list-item;
+  text-align: left;
+}
+
+.help{
+  display: list-item;
+  text-align: left;
+  text-size: 5em;
+}
+
+.container{
+  padding: 48px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 150px;
+}
+
+.container .group{
+  padding: 8px 48px;
+  margin: 5px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+label{
+  position: relative;
+}
+
+label::before{
+  content:"";
+  background: url('assets/circleCheck.jpg');
+  background-position: center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: -44px;
+  top: -8px;
+
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+input[type="checkbox"]:checked + label::before{
+  transform: scale(1) rotateZ(0deg);
+}
+
+label::after{
+  content: "";
+  border: 2px solid #009300;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -42px;
+  top: -6px;
+  border-radius: 50%;
+}
+
+label.msg{
+  display:none
+}
+
+button {
+  background: #FAC748;
+  padding: 15px;
+  margin: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+  border-style: solid;
+  border-color: #1D2F6F;
+  border-width: 3px;
+}
+
+input[type="text"]{
+  border-width:3px;
+  border-radius: 5px solid #1D2F6F;
+  width: 60%;
+  padding: 5px;
+  margin: 2px;
+}
+
+#fact{
+  width:100%;
+  background-color: #8af1ff55;
+  border-radius: 5px solid #1D2F6F;
+  padding: 5px;
+  margin: 2px;
+  margin-bottom: 25px;
+}
+
+#ref{
+  font-size: 0.7em;
+}
